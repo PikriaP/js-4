@@ -10,3 +10,13 @@ for (const key in person){
     
     
 }
+
+
+// Homework
+// 1
+const sortedLetters = (word) => {
+    return word.split('').sort().join(''); 
+};
+
+
+console.log(sortedLetters('webmaster')); 
