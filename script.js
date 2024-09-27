@@ -20,3 +20,19 @@ const sortedLetters = (word) => {
 
 
 console.log(sortedLetters('webmaster')); 
+
+// 2
+function makeId(length){
+    
+let text= "";
+const textString = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+for (let i = 0; i < length; i++) {
+    text += textString.charAt(Math.floor(Math.random()*textString.length));
+}
+return text;
+}
+
+console.log(makeId(5));
+
+
+//3
