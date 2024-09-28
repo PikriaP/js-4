@@ -64,3 +64,24 @@ const numbersArray = [1, 24, 28, 25, 72, 6, 496, 12];
     });
  }
  checker(numbersArray);
+
+
+ //4
+ function js_style(){
+    const paragraph = document.getElementById('text');
+    paragraph.style.fontsize='48px';
+    paragraph.style.color='red';
+    paragraph.style.fontWeight='bold';
+    paragraph.style.fontFamily='Arial';
+ }
+    
+ const button= document.getElementById('jsstyle');
+ button.style.backgroundColor = 'blue';     
+    button.style.color = 'white';               
+    button.style.border = '2px solid darkblue'; 
+    button.style.padding = '10px 20px';        
+    button.style.fontSize = '16px';           
+    button.style.borderRadius = '5px';        
+    button.style.cursor = 'pointer';
+
+
