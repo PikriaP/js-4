@@ -85,3 +85,39 @@ const numbersArray = [1, 24, 28, 25, 72, 6, 496, 12];
     button.style.cursor = 'pointer';
 
 
+    function createDropDownAndButton() {
+        const dropdown = document.createElement('select');
+        dropdown.id = 'myDropdown'; 
+        const options = ['white', 'black', 'green', 'yellow'];
+        options.forEach((optionText, index) => {
+            const option = document.createElement('option');
+            option.value = index + 1;
+            option.textContent = optionText;
+            dropdown.appendChild(option);
+        });
+    
+        const button = document.createElement('button');
+        button.id = 'removeButton';
+        button.textContent = 'Remove Selected Item';
+        button.onclick = removeSelectedItem;
+    
+        const container = document.getElementById('container');
+        container.appendChild(dropdown);
+        container.appendChild(button);
+    }
+    
+    // Remove selected item
+    function removeSelectedItem() {
+        const dropdown = document.getElementById('myDropdown'); // Fixed typo here
+        const selectedIndex = dropdown.selectedIndex;
+        if (selectedIndex !== -1) {
+            dropdown.remove(selectedIndex);
+        } else {
+            alert('Please select an item to remove.');
+        }
+    }
+    
+    createDropDownAndButton();
+
+
+    
