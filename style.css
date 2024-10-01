@@ -1,0 +1,19 @@
+
+.box {
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    background-color: antiquewhite;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.darkmode { 
+    background-color: brown;
+    
+    font-size: 28px;
+    font-size: 'arial';
+    color: aliceblue;
+
+}

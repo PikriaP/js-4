@@ -120,4 +120,11 @@ const numbersArray = [1, 24, 28, 25, 72, 6, 496, 12];
     createDropDownAndButton();
 
 
-    
+    const box =document.getElementById('box');
+
+    const changeColor = ()=> {
+        box.addEventListener("click", ()=> {
+            box.classList.toggle("darkmode");
+        });
+    };
+    changeColor();
